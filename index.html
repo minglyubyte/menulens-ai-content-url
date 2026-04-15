@@ -64,7 +64,8 @@
             color: #111;
         }
 
-        p, li {
+        p,
+        li {
             font-size: 16px;
             color: #555;
         }
@@ -94,39 +95,83 @@
     <div id="lang-en" class="policy-content active">
         <h1>ScanMyMenu Privacy Policy</h1>
         <p class="last-updated">Last Updated: April 2026</p>
-        <p>Welcome to ScanMyMenu. We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and share information about you when you use our mobile application ("App").</p>
+        <p>Welcome to ScanMyMenu. We respect your privacy and are committed to protecting your personal data. This
+            privacy policy explains how we collect, use, and share information about you when you use our mobile
+            application ("App").</p>
 
         <h2>1. Information We Collect</h2>
         <ul>
-            <li><strong>Account Information:</strong> When you sign in using Apple Sign-In, we receive your Name, Email Address, and a unique User ID.</li>
-            <li><strong>User Content:</strong> We securely collect photos of menus that you scan using your device's Camera or Photo Library. We also collect chat messages you send to our AI Concierge.</li>
-            <li><strong>Location Data:</strong> If you grant permission, we access your precise location in order to automatically identify nearby restaurants and tag scanned menus. This data is processed in real-time.</li>
-            <li><strong>Purchase History:</strong> We track your in-app purchase history to manage your credit balance and subscriptions.</li>
-            <li><strong>Dietary Preferences:</strong> Through your "Taste Profile", we collect dietary tags, allergies, and food preferences to personalize your AI recommendations.</li>
+            <li><strong>Account Information:</strong> When you sign in using Apple Sign-In, we receive your Name, Email
+                Address, and a unique User ID.</li>
+            <li><strong>User-Uploaded Content:</strong> We collect menu photos that you scan using your device's
+                Camera or Photo Library, meal photos you upload to use tracker features, and messages you send to our
+                AI assistant features.</li>
+            <li><strong>Assistant and Session Data:</strong> We may store assistant conversation history, assistant
+                session context, and limited cross-surface assistant state in order to provide menu, tracker, and help
+                assistant features.</li>
+            <li><strong>Location Data:</strong> If you grant permission, we access your precise location in order to
+                automatically identify nearby restaurants and tag scanned menus. This data is processed in real-time.
+            </li>
+            <li><strong>Purchase History:</strong> We track your in-app purchase history to manage your credit balance
+                and subscriptions.</li>
+            <li><strong>Dietary Preferences:</strong> Through your "Taste Profile", we collect dietary tags, allergies,
+                and food preferences to personalize your AI recommendations.</li>
+            <li><strong>Derived Menu and Dish Data:</strong> We may store structured menu facts, dish descriptions,
+                ingredient information, and similar AI-derived outputs generated from uploaded content.</li>
         </ul>
 
         <h2>2. How We Use Your Information</h2>
         <p>The information we collect is strictly used for <strong>App Functionality</strong>. Specifically:</p>
         <ul>
             <li>To securely authenticate your account across devices.</li>
-            <li>To process menu images using Artificial Intelligence and extract details.</li>
-            <li>To provide personalized responses via the AI Concierge based on your Taste Profile.</li>
+            <li>To process uploaded menu and meal images using Artificial Intelligence and extract details.</li>
+            <li>To generate and cache structured menu and dish data from uploaded content.</li>
+            <li>To generate AI dish visualizations and reuse them across the app for consistency and performance.</li>
+            <li>To provide personalized responses via the AI assistant based on your Taste Profile and assistant
+                session context.</li>
+            <li>To store assistant context needed to support menu, tracker, and help assistant experiences across app
+                surfaces.</li>
             <li>To determine the restaurant associated with a scanned menu using location services.</li>
             <li>To manage your app credits and subscription access.</li>
         </ul>
 
         <h2>3. Third-Party Services and AI Processing</h2>
         <ul>
-            <li><strong>Artificial Intelligence Providers:</strong> Menu images and chat text inputs are sent securely to third-party AI providers (such as Google). They are restricted from using your data to train their models.</li>
-            <li><strong>Location Services:</strong> Data is transmitted to the Google Places API to fulfill restaurant matching. This is not stored permanently or traced to your personal identity.</li>
-            <li><strong>Cloud Storage:</strong> Menu images are stored securely utilizing Cloudflare R2 object storage.</li>
+            <li><strong>Artificial Intelligence Providers:</strong> Menu images and chat text inputs are sent securely
+                to third-party AI providers (such as Google). They are restricted from using your data to train their
+                models.</li>
+            <li><strong>Location Services:</strong> Data is transmitted to the Google Places API to fulfill restaurant
+                matching. This is not stored permanently or traced to your personal identity.</li>
+            <li><strong>Cloud Storage:</strong> Uploaded menu images and uploaded meal photos are stored securely using
+                Cloudflare R2 object storage as user-linked data needed for app functionality.</li>
+            <li><strong>AI-Generated Visual Outputs:</strong> AI-generated dish visualizations are generated by the
+                platform, are owned by ScanMyMenu, and may be retained, displayed, cached, and reused across the app
+                for performance, consistency, and cost efficiency. These generated outputs are not treated as
+                user-owned personal data solely because a user triggered their creation.</li>
+            <li><strong>User Content License for Processing:</strong> By uploading menu or meal photos, you grant
+                ScanMyMenu the rights necessary to process, store, and use that uploaded content to provide app
+                functionality, including deriving structured menu information and generating AI outputs from it.</li>
+            <li><strong>Storage Separation:</strong> User-uploaded images are stored as user-linked content, while
+                AI-generated dish images may be stored separately as reusable platform assets.
+            </li>
         </ul>
 
         <h2>4. App Store Privacy Declarations</h2>
-        <p>In accordance with Apple's App Store Guidelines, we confirm that the data we collect is <strong>NOT used for Tracking</strong> purposes.</p>
+        <p>In accordance with Apple's App Store Guidelines, we confirm that the data we collect is <strong>NOT used for
+                Tracking</strong> purposes.</p>
 
         <h2>5. Data Retention and Account Deletion</h2>
-        <p>You can permanently delete your account directly through the settings within the ScanMyMenu app. This will remove all your data, including your taste profile and associated menu scans, from our active databases.</p>
+        <p>You can permanently delete your account directly through the settings within the ScanMyMenu app. Account
+            deletion removes user-linked data from our active systems, including account and profile data, taste
+            profile data, menu scans and uploaded menu images associated with your account, tracker records and
+            uploaded meal photos associated with your account, and assistant conversations, assistant session records,
+            and assistant global state associated with your account.</p>
+        <p>We may retain AI-generated dish visualizations owned by ScanMyMenu, de-identified or non-user-linked
+            structured menu and dish data, de-identified or non-user-linked generation logs, and records we are
+            required or permitted to retain for legal obligations, fraud prevention, security, backup handling, or the
+            establishment, exercise, or defense of legal claims. User-linked uploaded menu and meal images are deleted
+            from our active systems on account deletion subject to legal, security, and backup limitations, while
+            platform-owned generated outputs may remain because they are not user-specific records.</p>
 
         <h2>6. Contact & Support</h2>
         <p><strong>Support Email:</strong> <a href="mailto:scanmymenu.app@gmail.com">scanmymenu.app@gmail.com</a></p>
@@ -140,18 +185,23 @@
         <h2>1. 我们收集的信息</h2>
         <ul>
             <li><strong>账户信息：</strong> 当您使用 Apple 登录时，我们会收到您的姓名、电子邮件地址和唯一的社交用户 ID。</li>
-            <li><strong>用户内容：</strong> 我们安全地收集您使用设备的摄像头或照片库扫描的菜单照片。我们还会收集您发送给 AI 礼宾服务的聊天信息。</li>
+            <li><strong>用户上传内容：</strong> 我们会收集您使用设备摄像头或照片库扫描上传的菜单照片、您为追踪功能上传的餐食照片，以及您发送给 AI 助手功能的消息。</li>
+            <li><strong>助手与会话数据：</strong> 为了提供菜单助手、追踪助手和帮助助手功能，我们可能会存储助手对话历史、助手会话上下文，以及有限的跨页面助手状态。</li>
             <li><strong>位置数据：</strong> 如果您授予权限，我们会访问您的精确位置，以便自动识别附近的餐厅并标记扫描的菜单。此数据为实时处理。</li>
             <li><strong>购买记录：</strong> 我们追踪您的应用内购买历史，以管理您的积分余额和订阅。</li>
             <li><strong>饮食偏好：</strong> 通过您的“口味档案”，我们收集饮食标签、过敏原和食物偏好，以个性化您的 AI 推荐。</li>
+            <li><strong>派生的菜单与菜品数据：</strong> 我们可能会存储从上传内容中生成的结构化菜单事实、菜品描述、食材信息及类似 AI 派生输出。</li>
         </ul>
 
         <h2>2. 我们如何使用您的信息</h2>
         <p>我们收集的信息严格用于<strong>应用程序功能</strong>。具体包括：</p>
         <ul>
             <li>在不同设备间安全地验证您的账户。</li>
-            <li>使用人工智能处理菜单图像并提取详细信息。</li>
-            <li>根据您的口味档案，通过 AI 礼宾服务提供个性化回复。</li>
+            <li>使用人工智能处理您上传的菜单和餐食图像并提取详细信息。</li>
+            <li>从上传内容中生成并缓存结构化菜单和菜品数据。</li>
+            <li>生成 AI 菜品效果图，并在应用中复用这些效果图以提升一致性、性能和成本效率。</li>
+            <li>根据您的口味档案和助手会话上下文，通过 AI 助手提供个性化回复。</li>
+            <li>存储支持菜单助手、追踪助手和帮助助手跨页面体验所需的助手上下文。</li>
             <li>利用位置服务确定与扫描菜单关联的餐厅。</li>
             <li>管理您的应用积分和订阅访问权限。</li>
         </ul>
@@ -160,14 +210,18 @@
         <ul>
             <li><strong>人工智能提供商：</strong> 菜单图像和聊天文本会安全地发送给第三方 AI 提供商（如 Google）。他们被禁止使用您的数据来训练其模型。</li>
             <li><strong>位置服务：</strong> 数据传输至 Google Places API 以完成餐厅匹配。这些数据不会永久存储，也不会追溯到您的个人身份。</li>
-            <li><strong>云存储：</strong> 菜单图像使用 Cloudflare R2 对象存储进行安全存储。</li>
+            <li><strong>云存储：</strong> 您上传的菜单图像和餐食照片会作为与用户关联的数据，使用 Cloudflare R2 对象存储进行安全存储，以支持应用功能。</li>
+            <li><strong>AI 生成的视觉输出：</strong> AI 生成的菜品效果图由平台生成，归 ScanMyMenu 所有，并可为了性能、一致性和成本效率在应用中保留、展示、缓存和复用。仅因某位用户触发生成，并不会使该输出被视为用户拥有的个人数据。</li>
+            <li><strong>用于处理的用户内容许可：</strong> 当您上传菜单或餐食照片时，您授予 ScanMyMenu 为提供应用功能而处理、存储和使用这些上传内容所必需的权利，包括从中提取结构化菜单信息并生成 AI 输出。</li>
+            <li><strong>存储区分：</strong> 用户上传的图像会作为与用户关联的内容存储，而 AI 生成的菜品图像可能会单独存储为可复用的平台资产。</li>
         </ul>
 
         <h2>4. App Store 隐私声明</h2>
         <p>根据 Apple 的 App Store 指南，我们确认收集的数据<strong>不用于追踪</strong>目的。</p>
 
         <h2>5. 数据保留与账户注销</h2>
-        <p>您可以直接通过 ScanMyMenu 应用内的设置永久注销您的账户。注销操作将从我们的活跃数据库中删除您的所有数据，包括口味档案和相关的菜单扫描记录。</p>
+        <p>您可以直接通过 ScanMyMenu 应用内的设置永久注销您的账户。账户注销会从我们的活跃系统中删除与用户关联的数据，包括账户和档案数据、口味档案数据、与您账户关联的菜单扫描记录和上传的菜单图像、与您账户关联的追踪记录和上传的餐食照片，以及与您账户关联的助手对话、助手会话记录和助手全局状态。</p>
+        <p>我们可能会保留归 ScanMyMenu 所有的 AI 生成菜品效果图、去标识化或不再与用户关联的结构化菜单和菜品数据、去标识化或不再与用户关联的生成日志，以及因法律义务、欺诈防范、安全、备份处理或建立、行使或抗辩法律主张而需要或允许保留的记录。与用户关联的菜单图像和餐食图像会在账户注销时从我们的活跃系统中删除，但仍受法律、安全和备份限制；平台拥有的生成输出可能会继续保留，因为它们不是特定用户的记录。</p>
 
         <h2>6. 联系与支持</h2>
         <p><strong>支持邮箱：</strong> <a href="mailto:scanmymenu.app@gmail.com">scanmymenu.app@gmail.com</a></p>
@@ -176,39 +230,55 @@
     <div id="lang-ja" class="policy-content">
         <h1>ScanMyMenu プライバシーポリシー</h1>
         <p class="last-updated">最終更新日：2026年4月</p>
-        <p>ScanMyMenu へようこそ。当社はお客様のプライバシーを尊重し、個人データの保護に努めています。本プライバシーポリシーでは、当社のモバイルアプリケーション（以下「本アプリ」）の使用時における情報の収集、使用、および共有について説明します。</p>
+        <p>ScanMyMenu
+            へようこそ。当社はお客様のプライバシーを尊重し、個人データの保護に努めています。本プライバシーポリシーでは、当社のモバイルアプリケーション（以下「本アプリ」）の使用時における情報の収集、使用、および共有について説明します。
+        </p>
 
         <h2>1. 収集する情報</h2>
         <ul>
             <li><strong>アカウント情報：</strong> Appleでサインインを使用すると、氏名、メールアドレス、および固有のユーザーIDを受け取ります。</li>
-            <li><strong>ユーザーコンテンツ：</strong> デバイスのカメラまたはフォトライブラリを使用してスキャンされたメニューの写真を安全に収集します。また、AIコンシェルジュに送信されたチャットメッセージも収集します。</li>
-            <li><strong>位置情報データ：</strong> 許可をいただいた場合、周辺のレストランを自動的に特定し、スキャンしたメニューにタグを付けるために、正確な位置情報にアクセスします。このデータはリアルタイムで処理されます。</li>
+            <li><strong>ユーザーがアップロードするコンテンツ：</strong>
+                デバイスのカメラまたはフォトライブラリを使用してスキャンしたメニュー写真、トラッカー機能のためにアップロードした食事写真、およびAIアシスタント機能に送信したメッセージを収集します。</li>
+            <li><strong>アシスタントおよびセッションデータ：</strong>
+                メニューアシスタント、トラッカーアシスタント、およびヘルプアシスタント機能を提供するため、会話履歴、セッションコンテキスト、および限定的なクロスサーフェス状態を保存する場合があります。</li>
+            <li><strong>位置情報データ：</strong>
+                許可をいただいた場合、周辺のレストランを自動的に特定し、スキャンしたメニューにタグを付けるために、正確な位置情報にアクセスします。このデータはリアルタイムで処理されます。</li>
             <li><strong>購入履歴：</strong> クレジット残高やサブスクリプションを管理するために、アプリ内購入履歴を追跡します。</li>
             <li><strong>食事の好み：</strong> 「テイストプロフィール」を通じて、AIによるおすすめをパーソナライズするために、食事タグ、アレルギー、食品の好みを収集します。</li>
+            <li><strong>派生したメニューおよび料理データ：</strong> アップロードされたコンテンツから生成された構造化メニュー情報、料理の説明、材料情報、および類似のAI派生出力を保存する場合があります。</li>
         </ul>
 
         <h2>2. 情報の利用目的</h2>
         <p>収集された情報は、<strong>アプリの機能提供</strong>のみに使用されます。具体的には：</p>
         <ul>
             <li>デバイス間での安全なアカウント認証。</li>
-            <li>人工知能を使用したメニュー画像の処理と詳細の抽出。</li>
-            <li>テイストプロフィールに基づくAIコンシェルジュによるパーソナライズされた回答。</li>
+            <li>アップロードされたメニュー画像や食事画像をAIで処理し、詳細を抽出すること。</li>
+            <li>アップロードされたコンテンツから構造化されたメニューおよび料理データを生成・キャッシュすること。</li>
+            <li>AIによる料理ビジュアルを生成し、一貫性、性能、コスト効率のためにアプリ全体で再利用すること。</li>
+            <li>テイストプロフィールとアシスタントのセッションコンテキストに基づき、AIアシスタントからパーソナライズされた回答を提供すること。</li>
+            <li>メニュー、トラッカー、ヘルプアシスタント体験をまたいで必要なアシスタントコンテキストを保存すること。</li>
             <li>位置サービスを利用した、スキャン済みメニューに関連するレストランの特定。</li>
             <li>アプリ内クレジットおよびサブスクリプションの管理。</li>
         </ul>
 
         <h2>3. サードパーティサービスとAI処理</h2>
         <ul>
-            <li><strong>人工知能プロバイダー：</strong> メニュー画像とチャット入力は、サードパーティAIプロバイダー（Googleなど）に安全に送信されます。プロバイダーがこれらのデータを使用してモデルをトレーニングすることは禁止されています。</li>
-            <li><strong>位置情報サービス：</strong> レストランの照合を行うため、データはGoogle Places APIに送信されます。このデータが永続的に保存されたり、個人特定に使用されたりすることはありません。</li>
-            <li><strong>クラウドストレージ：</strong> メニュー画像は Cloudflare R2 オブジェクトストレージを使用して安全に保存されます。</li>
+            <li><strong>人工知能プロバイダー：</strong>
+                メニュー画像とチャット入力は、サードパーティAIプロバイダー（Googleなど）に安全に送信されます。プロバイダーがこれらのデータを使用してモデルをトレーニングすることは禁止されています。</li>
+            <li><strong>位置情報サービス：</strong> レストランの照合を行うため、データはGoogle Places
+                APIに送信されます。このデータが永続的に保存されたり、個人特定に使用されたりすることはありません。</li>
+            <li><strong>クラウドストレージ：</strong> アップロードされたメニュー画像や食事写真は、アプリ機能に必要なユーザー関連データとして、Cloudflare R2 オブジェクトストレージに安全に保存されます。</li>
+            <li><strong>AI生成のビジュアル出力：</strong> AI生成の料理ビジュアルはプラットフォームによって生成され、ScanMyMenu に帰属し、性能、一貫性、コスト効率のためにアプリ内で保持、表示、キャッシュ、および再利用される場合があります。ユーザーが生成をトリガーしたという理由だけで、これらの出力がユーザー所有の個人データとして扱われることはありません。</li>
+            <li><strong>処理のためのユーザーコンテンツ利用許諾：</strong> メニュー写真または食事写真をアップロードすることにより、お客様は、アプリ機能を提供するために必要な範囲で、そのアップロードコンテンツを処理、保存、利用する権利を ScanMyMenu に付与するものとします。これには、構造化されたメニュー情報の導出およびAI出力の生成が含まれます。</li>
+            <li><strong>保存の区分：</strong> ユーザーがアップロードした画像はユーザー関連コンテンツとして保存され、AI生成の料理画像は再利用可能なプラットフォーム資産として別途保存される場合があります。</li>
         </ul>
 
         <h2>4. App Storeのプライバシー宣言</h2>
         <p>AppleのApp Storeガイドラインに従い、収集されたデータは<strong>トラッキング目的で使用されない</strong>ことを確認します。</p>
 
         <h2>5. データの保持とアカウントの削除</h2>
-        <p>ScanMyMenuアプリ内の設定から、いつでもアカウントを完全に削除できます。アカウントの削除を開始すると、テイストプロフィールや関連するメニュースキャンを含むすべてのデータが有効なデータベースから削除されます。</p>
+        <p>ScanMyMenuアプリ内の設定から、いつでもアカウントを完全に削除できます。アカウント削除により、アカウントおよびプロフィール情報、テイストプロフィール情報、アカウントに関連付けられたメニュースキャンとアップロード済みメニュー画像、アカウントに関連付けられたトラッカー記録とアップロード済み食事写真、ならびにアカウントに関連付けられたアシスタント会話、アシスタントセッション記録、およびアシスタントのグローバル状態など、ユーザーに関連付けられたデータは有効なシステムから削除されます。</p>
+        <p>一方で、ScanMyMenu が所有するAI生成の料理ビジュアル、匿名化または非ユーザー関連化された構造化メニュー・料理データ、匿名化または非ユーザー関連化された生成ログ、ならびに法的義務、詐欺防止、セキュリティ、バックアップ処理、または法的請求の立証・行使・防御のために保持が必要または許容される記録は保持される場合があります。ユーザーに関連付けられたメニュー画像と食事画像は、法的・セキュリティ・バックアップ上の制約に従って、アカウント削除時に当社の有効なシステムから削除されますが、プラットフォーム所有の生成出力は特定ユーザーの記録ではないため、削除後も残る場合があります。</p>
 
         <h2>6. お問い合わせとサポート</h2>
         <p><strong>サポートメール：</strong> <a href="mailto:scanmymenu.app@gmail.com">scanmymenu.app@gmail.com</a></p>
@@ -217,38 +287,89 @@
     <div id="lang-fr" class="policy-content">
         <h1>Politique de confidentialité ScanMyMenu</h1>
         <p class="last-updated">Dernière mise à jour : Avril 2026</p>
-        <p>Bienvenue sur ScanMyMenu. Nous respectons votre vie privée et nous engageons à protéger vos données personnelles. Cette politique explique comment nous collectons, utilisons et partageons vos informations via notre application mobile ("App").</p>
+        <p>Bienvenue sur ScanMyMenu. Nous respectons votre vie privée et nous engageons à protéger vos données
+            personnelles. Cette politique explique comment nous collectons, utilisons et partageons vos informations via
+            notre application mobile ("App").</p>
 
         <h2>1. Informations que nous collectons</h2>
         <ul>
-            <li><strong>Informations de compte :</strong> Via Apple Sign-In, nous recevons votre nom, adresse e-mail et un identifiant unique.</li>
-            <li><strong>Contenu utilisateur :</strong> Photos des menus scannés et messages envoyés à notre Concierge IA.</li>
-            <li><strong>Données de localisation :</strong> Avec votre permission, pour identifier les restaurants à proximité. Traitées en temps réel.</li>
+            <li><strong>Informations de compte :</strong> Via Apple Sign-In, nous recevons votre nom, adresse e-mail et
+                un identifiant unique.</li>
+            <li><strong>Contenu téléversé par l'utilisateur :</strong> Photos de menus scannés, photos de repas
+                téléversées pour les fonctions de suivi, et messages envoyés à nos fonctions d'assistant IA.</li>
+            <li><strong>Données d'assistant et de session :</strong> Nous pouvons stocker l'historique des
+                conversations, le contexte des sessions d'assistant et un état limité partagé entre surfaces afin de
+                fournir les assistants menu, tracker et aide.</li>
+            <li><strong>Données de localisation :</strong> Avec votre permission, pour identifier les restaurants à
+                proximité. Traitées en temps réel.</li>
             <li><strong>Historique d'achat :</strong> Pour gérer vos crédits et abonnements.</li>
-            <li><strong>Préférences alimentaires :</strong> Via votre "Profil de goût", pour personnaliser les recommandations de l'IA.</li>
+            <li><strong>Préférences alimentaires :</strong> Via votre "Profil de goût", pour personnaliser les
+                recommandations de l'IA.</li>
+            <li><strong>Données dérivées de menus et de plats :</strong> Nous pouvons stocker des faits structurés sur
+                les menus, des descriptions de plats, des informations sur les ingrédients et des sorties similaires
+                dérivées par l'IA à partir du contenu téléversé.</li>
         </ul>
 
         <h2>2. Utilisation de vos informations</h2>
         <p>Les informations sont strictement utilisées pour le <strong>fonctionnement de l'application</strong> :</p>
         <ul>
             <li>Authentification sécurisée du compte.</li>
-            <li>Traitement des images de menu par IA.</li>
-            <li>Réponses personnalisées du Concierge IA.</li>
+            <li>Traitement par IA des images de menus et de repas téléversées.</li>
+            <li>Génération et mise en cache de données structurées sur les menus et les plats à partir du contenu
+                téléversé.</li>
+            <li>Génération de visualisations IA de plats et réutilisation de ces visuels dans l'application pour la
+                cohérence, la performance et l'efficacité des coûts.</li>
+            <li>Réponses personnalisées de l'assistant IA en fonction de votre profil gustatif et du contexte de
+                session de l'assistant.</li>
+            <li>Stockage du contexte nécessaire pour prendre en charge les assistants menu, tracker et aide sur
+                différentes surfaces de l'application.</li>
             <li>Identification du restaurant par géolocalisation.</li>
+            <li>Gestion des crédits et des abonnements de l'application.</li>
         </ul>
 
         <h2>3. Services tiers et traitement IA</h2>
         <ul>
-            <li><strong>IA :</strong> Les données sont envoyées de manière sécurisée à des prestataires (comme Google). Ils ne peuvent pas utiliser vos données pour entraîner leurs modèles.</li>
-            <li><strong>Localisation :</strong> Utilisation de Google Places API. Les données ne sont pas stockées de manière permanente.</li>
-            <li><strong>Stockage :</strong> Les images sont stockées en toute sécurité via Cloudflare R2.</li>
+            <li><strong>IA :</strong> Les données sont envoyées de manière sécurisée à des prestataires (comme Google).
+                Ils ne peuvent pas utiliser vos données pour entraîner leurs modèles.</li>
+            <li><strong>Localisation :</strong> Utilisation de Google Places API. Les données ne sont pas stockées de
+                manière permanente.</li>
+            <li><strong>Stockage :</strong> Les images de menus et les photos de repas téléversées sont stockées en
+                toute sécurité via Cloudflare R2 en tant que données liées à l'utilisateur nécessaires au
+                fonctionnement de l'application.</li>
+            <li><strong>Sorties visuelles générées par IA :</strong> Les visualisations IA de plats sont générées par
+                la plateforme, appartiennent à ScanMyMenu et peuvent être conservées, affichées, mises en cache et
+                réutilisées dans l'application pour la performance, la cohérence et l'efficacité des coûts. Elles ne
+                sont pas considérées comme des données personnelles appartenant à l'utilisateur du seul fait qu'un
+                utilisateur a déclenché leur génération.</li>
+            <li><strong>Licence de traitement du contenu utilisateur :</strong> En téléversant des photos de menus ou
+                de repas, vous accordez à ScanMyMenu les droits nécessaires pour traiter, stocker et utiliser ce
+                contenu afin de fournir les fonctionnalités de l'application, y compris la dérivation d'informations
+                structurées sur les menus et la génération de sorties IA.</li>
+            <li><strong>Séparation du stockage :</strong> Les images téléversées par l'utilisateur sont stockées comme
+                contenu lié à l'utilisateur, tandis que les images de plats générées par IA peuvent être stockées
+                séparément comme ressources réutilisables de la plateforme.</li>
         </ul>
 
         <h2>4. Déclarations App Store</h2>
-        <p>Nous confirmons que les données collectées ne sont <strong>PAS utilisées à des fins de suivi</strong> (tracking).</p>
+        <p>Nous confirmons que les données collectées ne sont <strong>PAS utilisées à des fins de suivi</strong>
+            (tracking).</p>
 
         <h2>5. Rétention et suppression des données</h2>
-        <p>Vous pouvez supprimer votre compte via les paramètres de l'application. Cela supprimera toutes vos données de nos bases de données actives.</p>
+        <p>Vous pouvez supprimer votre compte via les paramètres de l'application. La suppression du compte retire de
+            nos systèmes actifs les données liées à l'utilisateur, y compris les données de compte et de profil, les
+            données du profil de goût, les scans de menus et les images de menus téléversées associés à votre compte,
+            les enregistrements du tracker et les photos de repas téléversées associées à votre compte, ainsi que les
+            conversations d'assistant, les enregistrements de session d'assistant et l'état global de l'assistant
+            associés à votre compte.</p>
+        <p>Nous pouvons conserver les visualisations de plats générées par IA appartenant à ScanMyMenu, les données
+            structurées sur les menus et les plats qui sont désidentifiées ou non liées à un utilisateur, les journaux
+            de génération désidentifiés ou non liés à un utilisateur, ainsi que les enregistrements que nous devons ou
+            pouvons conserver pour des obligations légales, la prévention de la fraude, la sécurité, la gestion des
+            sauvegardes ou l'établissement, l'exercice ou la défense de droits en justice. Les images de menus et de
+            repas téléversées liées à l'utilisateur sont supprimées de nos systèmes actifs lors de la suppression du
+            compte sous réserve des limites juridiques, de sécurité et de sauvegarde, tandis que les sorties générées
+            appartenant à la plateforme peuvent subsister car elles ne constituent pas des enregistrements propres à un
+            utilisateur.</p>
 
         <h2>6. Contact et Support</h2>
         <p><strong>E-mail :</strong> <a href="mailto:scanmymenu.app@gmail.com">scanmymenu.app@gmail.com</a></p>
@@ -257,41 +378,91 @@
     <div id="lang-es" class="policy-content">
         <h1>Política de Privacidad de ScanMyMenu</h1>
         <p class="last-updated">Última actualización: Abril de 2026</p>
-        <p>Bienvenido a ScanMyMenu. Respetamos su privacidad y nos comprometemos a proteger sus datos personales. Esta política explica cómo recopilamos, usamos y compartimos su información a través de nuestra aplicación móvil ("App").</p>
+        <p>Bienvenido a ScanMyMenu. Respetamos su privacidad y nos comprometemos a proteger sus datos personales. Esta
+            política explica cómo recopilamos, usamos y compartimos su información a través de nuestra aplicación móvil
+            ("App").</p>
 
         <h2>1. Información que recopilamos</h2>
         <ul>
-            <li><strong>Información de la cuenta:</strong> Al usar Apple Sign-In, recibimos su nombre, correo electrónico e ID de usuario único.</li>
-            <li><strong>Contenido del usuario:</strong> Fotos de menús escaneados y mensajes de chat enviados a nuestro Conserje de IA.</li>
-            <li><strong>Datos de ubicación:</strong> Con su permiso, para identificar restaurantes cercanos. Procesados en tiempo real.</li>
+            <li><strong>Información de la cuenta:</strong> Al usar Apple Sign-In, recibimos su nombre, correo
+                electrónico e ID de usuario único.</li>
+            <li><strong>Contenido cargado por el usuario:</strong> Fotos de menús escaneados, fotos de comidas
+                cargadas para las funciones del tracker y mensajes enviados a nuestras funciones de asistente de IA.</li>
+            <li><strong>Datos de asistente y sesión:</strong> Podemos almacenar historial de conversaciones del
+                asistente, contexto de sesión y un estado limitado compartido entre superficies para ofrecer los
+                asistentes de menú, tracker y ayuda.</li>
+            <li><strong>Datos de ubicación:</strong> Con su permiso, para identificar restaurantes cercanos. Procesados
+                en tiempo real.</li>
             <li><strong>Historial de compras:</strong> Para gestionar sus créditos y suscripciones.</li>
-            <li><strong>Preferencias dietéticas:</strong> A través de su "Perfil de Sabor", para personalizar las recomendaciones de la IA.</li>
+            <li><strong>Preferencias dietéticas:</strong> A través de su "Perfil de Sabor", para personalizar las
+                recomendaciones de la IA.</li>
+            <li><strong>Datos derivados de menús y platos:</strong> Podemos almacenar hechos estructurados de menús,
+                descripciones de platos, información de ingredientes y salidas similares derivadas por IA a partir del
+                contenido cargado.</li>
         </ul>
 
         <h2>2. Cómo usamos su información</h2>
         <p>La información se utiliza estrictamente para la <strong>funcionalidad de la aplicación</strong>:</p>
         <ul>
             <li>Autenticación segura de la cuenta.</li>
-            <li>Procesamiento de imágenes de menús mediante IA.</li>
-            <li>Respuestas personalizadas del Conserje de IA.</li>
+            <li>Procesamiento mediante IA de imágenes de menús y comidas cargadas.</li>
+            <li>Generación y almacenamiento en caché de datos estructurados de menús y platos a partir del contenido
+                cargado.</li>
+            <li>Generación de visualizaciones de platos con IA y reutilización de esas imágenes en la app para
+                consistencia, rendimiento y eficiencia de costos.</li>
+            <li>Respuestas personalizadas del asistente de IA basadas en su Perfil de Sabor y en el contexto de sesión
+                del asistente.</li>
+            <li>Almacenamiento del contexto necesario para soportar los asistentes de menú, tracker y ayuda en
+                distintas superficies de la app.</li>
             <li>Identificación del restaurante mediante servicios de ubicación.</li>
+            <li>Gestión de créditos y suscripciones de la app.</li>
         </ul>
 
         <h2>3. Servicios de terceros y procesamiento de IA</h2>
         <ul>
-            <li><strong>Proveedores de IA:</strong> Los datos se envían de forma segura a proveedores (como Google). Tienen restringido el uso de sus datos para entrenar modelos.</li>
-            <li><strong>Servicios de ubicación:</strong> Uso de Google Places API. Los datos no se almacenan permanentemente.</li>
-            <li><strong>Almacenamiento:</strong> Las imágenes se guardan de forma segura en Cloudflare R2.</li>
+            <li><strong>Proveedores de IA:</strong> Los datos se envían de forma segura a proveedores (como Google).
+                Tienen restringido el uso de sus datos para entrenar modelos.</li>
+            <li><strong>Servicios de ubicación:</strong> Uso de Google Places API. Los datos no se almacenan
+                permanentemente.</li>
+            <li><strong>Almacenamiento:</strong> Las imágenes de menús y las fotos de comidas cargadas se almacenan de
+                forma segura en Cloudflare R2 como datos vinculados al usuario necesarios para la funcionalidad de la
+                app.</li>
+            <li><strong>Salidas visuales generadas por IA:</strong> Las visualizaciones de platos generadas por IA son
+                creadas por la plataforma, son propiedad de ScanMyMenu y pueden conservarse, mostrarse, almacenarse en
+                caché y reutilizarse en la app para rendimiento, consistencia y eficiencia de costos. Estas salidas no
+                se consideran datos personales propiedad del usuario solo porque un usuario haya solicitado su
+                generación.</li>
+            <li><strong>Licencia de contenido del usuario para procesamiento:</strong> Al cargar fotos de menús o
+                comidas, usted concede a ScanMyMenu los derechos necesarios para procesar, almacenar y usar ese
+                contenido cargado con el fin de prestar la funcionalidad de la app, incluida la derivación de
+                información estructurada del menú y la generación de salidas de IA.</li>
+            <li><strong>Separación de almacenamiento:</strong> Las imágenes cargadas por el usuario se almacenan como
+                contenido vinculado al usuario, mientras que las imágenes de platos generadas por IA pueden almacenarse
+                por separado como activos reutilizables de la plataforma.</li>
         </ul>
 
         <h2>4. Declaraciones de la App Store</h2>
         <p>Confirmamos que los datos recopilados <strong>NO se utilizan para fines de rastreo</strong> (tracking).</p>
 
         <h2>5. Retención y eliminación de datos</h2>
-        <p>Puede eliminar su cuenta permanentemente a través de los ajustes de la aplicación. Esto borrará todos sus datos de nuestras bases de datos activas.</p>
+        <p>Puede eliminar su cuenta permanentemente a través de los ajustes de la aplicación. La eliminación de la
+            cuenta borra de nuestros sistemas activos los datos vinculados al usuario, incluidos los datos de cuenta y
+            perfil, los datos del Perfil de Sabor, los escaneos de menús y las imágenes de menús cargadas asociadas
+            con su cuenta, los registros del tracker y las fotos de comidas cargadas asociadas con su cuenta, así como
+            las conversaciones del asistente, los registros de sesión del asistente y el estado global del asistente
+            asociados con su cuenta.</p>
+        <p>Podemos conservar las visualizaciones de platos generadas por IA que son propiedad de ScanMyMenu, los datos
+            estructurados de menús y platos que estén desidentificados o no vinculados a un usuario, los registros de
+            generación desidentificados o no vinculados a un usuario, y los registros que debamos o podamos conservar
+            por obligaciones legales, prevención del fraude, seguridad, manejo de respaldos o el establecimiento,
+            ejercicio o defensa de reclamaciones legales. Las imágenes de menús y comidas cargadas vinculadas al
+            usuario se eliminan de nuestros sistemas activos al borrar la cuenta, sujetas a limitaciones legales, de
+            seguridad y de respaldo, mientras que las salidas generadas que son propiedad de la plataforma pueden
+            permanecer porque no son registros específicos de un usuario.</p>
 
         <h2>6. Contacto y Soporte</h2>
-        <p><strong>Correo de soporte:</strong> <a href="mailto:scanmymenu.app@gmail.com">scanmymenu.app@gmail.com</a></p>
+        <p><strong>Correo de soporte:</strong> <a href="mailto:scanmymenu.app@gmail.com">scanmymenu.app@gmail.com</a>
+        </p>
     </div>
 
     <script>
@@ -306,7 +477,7 @@
             // Update button styles
             document.querySelectorAll('.lang-button').forEach(btn => {
                 btn.classList.remove('active');
-                if (btn.innerText.toLowerCase().includes(lang) || 
+                if (btn.innerText.toLowerCase().includes(lang) ||
                     (lang === 'zh' && btn.innerText === '中文') ||
                     (lang === 'ja' && btn.innerText === '日本語') ||
                     (lang === 'fr' && btn.innerText === 'Français') ||
@@ -318,4 +489,5 @@
     </script>
 
 </body>
+
 </html>
