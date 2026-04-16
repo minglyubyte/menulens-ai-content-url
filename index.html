@@ -113,12 +113,12 @@
                 automatically identify nearby restaurants and tag scanned menus. This data is processed in real-time.
             </li>
             <li><strong>Purchase and Entitlement Data:</strong> We track your in-app subscription purchases, restore
-                events, and entitlement status to manage free-tier access, Premium Monthly access, and Premium Annual
-                access.</li>
+                events, and entitlement status to manage free-tier access, including the free tracker history window of
+                the last 14 days, as well as Premium Monthly access and Premium Annual access.</li>
             <li><strong>Usage and Security Signals:</strong> We may collect usage logs and related security signals,
                 such as scan counts, dish visualization requests, assistant request volume, device/session activity,
-                and similar technical metadata, to enforce fair-use limits, detect abnormal behavior, prevent fraud,
-                and protect service reliability.</li>
+                tracker history lock interactions, and similar technical metadata, to enforce fair-use limits, detect
+                abnormal behavior, prevent fraud, and protect service reliability.</li>
             <li><strong>Dietary Preferences:</strong> Through your "Taste Profile", we collect dietary tags, allergies,
                 and food preferences to personalize your AI recommendations.</li>
             <li><strong>Derived Menu and Dish Data:</strong> We may store structured menu facts, dish descriptions,
@@ -137,9 +137,9 @@
             <li>To store assistant context needed to support menu, tracker, and help assistant experiences across app
                 surfaces.</li>
             <li>To determine the restaurant associated with a scanned menu using location services.</li>
-            <li>To manage free-tier limits, including the current free daily scan allowance and recent-history cap, as
-                well as subscription access, restore purchases, and Premium entitlements, including the current dish
-                visualization allowance.</li>
+            <li>To manage free-tier limits, including the current free daily scan allowance, the 14-day free tracker
+                history window, and the recent scan-history cap, as well as subscription access, restore purchases, and
+                Premium entitlements, including the current dish visualization allowance.</li>
             <li>To monitor abnormal, automated, fraudulent, or abusive activity and protect the reliability and
                 security of the service.</li>
         </ul>
@@ -197,8 +197,8 @@
             <li><strong>用户上传内容：</strong> 我们会收集您使用设备摄像头或照片库扫描上传的菜单照片、您为追踪功能上传的餐食照片，以及您发送给 AI 助手功能的消息。</li>
             <li><strong>助手与会话数据：</strong> 为了提供菜单助手、追踪助手和帮助助手功能，我们可能会存储助手对话历史、助手会话上下文，以及有限的跨页面助手状态。</li>
             <li><strong>位置数据：</strong> 如果您授予权限，我们会访问您的精确位置，以便自动识别附近的餐厅并标记扫描的菜单。此数据为实时处理。</li>
-            <li><strong>购买与权益数据：</strong> 我们会追踪您的应用内订阅购买、恢复购买事件和权益状态，以管理免费层、Premium Monthly 和 Premium Annual 的访问权限。</li>
-            <li><strong>使用与安全信号：</strong> 我们可能会收集使用日志及相关安全信号，例如扫描次数、菜品效果图请求次数、助手请求量、设备/会话活动及类似技术元数据，用于执行合理使用限制、检测异常行为、防止欺诈并保护服务稳定性。</li>
+            <li><strong>购买与权益数据：</strong> 我们会追踪您的应用内订阅购买、恢复购买事件和权益状态，以管理免费层权限，包括免费用户最近 14 天的追踪历史窗口，以及 Premium Monthly 和 Premium Annual 的访问权限。</li>
+            <li><strong>使用与安全信号：</strong> 我们可能会收集使用日志及相关安全信号，例如扫描次数、菜品效果图请求次数、助手请求量、设备/会话活动、追踪历史锁定日期点击记录及类似技术元数据，用于执行合理使用限制、检测异常行为、防止欺诈并保护服务稳定性。</li>
             <li><strong>饮食偏好：</strong> 通过您的“口味档案”，我们收集饮食标签、过敏原和食物偏好，以个性化您的 AI 推荐。</li>
             <li><strong>派生的菜单与菜品数据：</strong> 我们可能会存储从上传内容中生成的结构化菜单事实、菜品描述、食材信息及类似 AI 派生输出。</li>
         </ul>
@@ -213,7 +213,7 @@
             <li>根据您的口味档案和助手会话上下文，通过 AI 助手提供个性化回复。</li>
             <li>存储支持菜单助手、追踪助手和帮助助手跨页面体验所需的助手上下文。</li>
             <li>利用位置服务确定与扫描菜单关联的餐厅。</li>
-            <li>管理免费层限制，包括当前的每日免费扫描额度和最近历史记录上限，以及订阅访问、恢复购买和 Premium 权益，包括当前的菜品效果图额度。</li>
+            <li>管理免费层限制，包括当前的每日免费扫描额度、免费用户最近 14 天的追踪历史窗口和最近历史记录上限，以及订阅访问、恢复购买和 Premium 权益，包括当前的菜品效果图额度。</li>
             <li>监控异常、自动化、欺诈或滥用行为，并保护服务的可靠性与安全性。</li>
         </ul>
 
@@ -254,8 +254,8 @@
                 メニューアシスタント、トラッカーアシスタント、およびヘルプアシスタント機能を提供するため、会話履歴、セッションコンテキスト、および限定的なクロスサーフェス状態を保存する場合があります。</li>
             <li><strong>位置情報データ：</strong>
                 許可をいただいた場合、周辺のレストランを自動的に特定し、スキャンしたメニューにタグを付けるために、正確な位置情報にアクセスします。このデータはリアルタイムで処理されます。</li>
-            <li><strong>購入および権利データ：</strong> 無料プラン、Premium Monthly、Premium Annual のアクセスを管理するため、アプリ内サブスクリプション購入、復元イベント、および権利状態を追跡します。</li>
-            <li><strong>利用状況およびセキュリティシグナル：</strong> フェアユース制限の適用、異常行動の検知、不正防止、サービスの信頼性保護のため、スキャン回数、料理ビジュアル生成リクエスト数、アシスタントの利用量、デバイス/セッション活動、その他類似の技術メタデータを収集する場合があります。</li>
+            <li><strong>購入および権利データ：</strong> 無料プランのアクセス管理（無料ユーザーのトラッカー履歴は直近14日間を含む）および Premium Monthly、Premium Annual のアクセスを管理するため、アプリ内サブスクリプション購入、復元イベント、および権利状態を追跡します。</li>
+            <li><strong>利用状況およびセキュリティシグナル：</strong> フェアユース制限の適用、異常行動の検知、不正防止、サービスの信頼性保護のため、スキャン回数、料理ビジュアル生成リクエスト数、アシスタントの利用量、デバイス/セッション活動、トラッカー履歴のロックされた日付への操作、およびその他類似の技術メタデータを収集する場合があります。</li>
             <li><strong>食事の好み：</strong> 「テイストプロフィール」を通じて、AIによるおすすめをパーソナライズするために、食事タグ、アレルギー、食品の好みを収集します。</li>
             <li><strong>派生したメニューおよび料理データ：</strong> アップロードされたコンテンツから生成された構造化メニュー情報、料理の説明、材料情報、および類似のAI派生出力を保存する場合があります。</li>
         </ul>
@@ -270,7 +270,7 @@
             <li>テイストプロフィールとアシスタントのセッションコンテキストに基づき、AIアシスタントからパーソナライズされた回答を提供すること。</li>
             <li>メニュー、トラッカー、ヘルプアシスタント体験をまたいで必要なアシスタントコンテキストを保存すること。</li>
             <li>位置サービスを利用した、スキャン済みメニューに関連するレストランの特定。</li>
-            <li>現在の無料日次スキャン枠や履歴保存上限を含む無料プランの利用上限、サブスクリプションアクセス、購入復元、および現在の料理ビジュアル枠を含む Premium 権利の管理。</li>
+            <li>現在の無料日次スキャン枠、無料ユーザーのトラッカー履歴の直近14日間ウィンドウ、履歴保存上限を含む無料プランの利用上限、サブスクリプションアクセス、購入復元、および現在の料理ビジュアル枠を含む Premium 権利の管理。</li>
             <li>異常、自動化、不正、または濫用的な利用を監視し、サービスの信頼性と安全性を保護すること。</li>
         </ul>
 
@@ -315,8 +315,8 @@
                 fournir les assistants menu, tracker et aide.</li>
             <li><strong>Données de localisation :</strong> Avec votre permission, pour identifier les restaurants à
                 proximité. Traitées en temps réel.</li>
-            <li><strong>Données d'achat et de droits :</strong> Pour gérer vos abonnements intégrés, les restaurations d'achat et les droits d'accès Free, Premium Monthly et Premium Annual.</li>
-            <li><strong>Signaux d'usage et de sécurité :</strong> Nous pouvons collecter des journaux d'usage et des signaux de sécurité associés, tels que le nombre de scans, les demandes de visualisation de plats, le volume de requêtes à l'assistant, l'activité de l'appareil/de session et des métadonnées techniques similaires, afin d'appliquer les limites d'usage raisonnable, détecter les comportements anormaux, prévenir la fraude et protéger la fiabilité du service.</li>
+            <li><strong>Données d'achat et de droits :</strong> Pour gérer vos abonnements intégrés, les restaurations d'achat et les droits d'accès Free, y compris la fenêtre d'historique tracker gratuite des 14 derniers jours, ainsi que Premium Monthly et Premium Annual.</li>
+            <li><strong>Signaux d'usage et de sécurité :</strong> Nous pouvons collecter des journaux d'usage et des signaux de sécurité associés, tels que le nombre de scans, les demandes de visualisation de plats, le volume de requêtes à l'assistant, l'activité de l'appareil/de session, les interactions avec les dates verrouillées de l'historique tracker et des métadonnées techniques similaires, afin d'appliquer les limites d'usage raisonnable, détecter les comportements anormaux, prévenir la fraude et protéger la fiabilité du service.</li>
             <li><strong>Préférences alimentaires :</strong> Via votre "Profil de goût", pour personnaliser les
                 recommandations de l'IA.</li>
             <li><strong>Données dérivées de menus et de plats :</strong> Nous pouvons stocker des faits structurés sur
@@ -338,7 +338,7 @@
             <li>Stockage du contexte nécessaire pour prendre en charge les assistants menu, tracker et aide sur
                 différentes surfaces de l'application.</li>
             <li>Identification du restaurant par géolocalisation.</li>
-            <li>Gestion des limites de l'offre gratuite, y compris l'allocation quotidienne actuelle de scans et la limite d'historique récent, ainsi que des abonnements, des restaurations d'achat et des droits Premium, y compris l'allocation actuelle de visualisations de plats.</li>
+            <li>Gestion des limites de l'offre gratuite, y compris l'allocation quotidienne actuelle de scans, la fenêtre gratuite de 14 jours pour l'historique tracker et la limite d'historique récent, ainsi que des abonnements, des restaurations d'achat et des droits Premium, y compris l'allocation actuelle de visualisations de plats.</li>
             <li>Surveillance des activités anormales, automatisées, frauduleuses ou abusives afin de protéger la fiabilité et la sécurité du service.</li>
         </ul>
 
@@ -408,8 +408,8 @@
                 asistentes de menú, tracker y ayuda.</li>
             <li><strong>Datos de ubicación:</strong> Con su permiso, para identificar restaurantes cercanos. Procesados
                 en tiempo real.</li>
-            <li><strong>Datos de compra y de derechos:</strong> Para gestionar sus suscripciones dentro de la app, las restauraciones de compra y el acceso de Free, Premium Monthly y Premium Annual.</li>
-            <li><strong>Señales de uso y seguridad:</strong> Podemos recopilar registros de uso y señales de seguridad relacionadas, como el número de escaneos, solicitudes de visualización de platos, volumen de solicitudes al asistente, actividad del dispositivo o de la sesión y metadatos técnicos similares, para aplicar límites de uso razonable, detectar comportamientos anómalos, prevenir fraude y proteger la fiabilidad del servicio.</li>
+            <li><strong>Datos de compra y de derechos:</strong> Para gestionar sus suscripciones dentro de la app, las restauraciones de compra y el acceso Free, incluida la ventana gratuita de 14 días del historial del tracker, así como Premium Monthly y Premium Annual.</li>
+            <li><strong>Señales de uso y seguridad:</strong> Podemos recopilar registros de uso y señales de seguridad relacionadas, como el número de escaneos, solicitudes de visualización de platos, volumen de solicitudes al asistente, actividad del dispositivo o de la sesión, interacciones con fechas bloqueadas del historial del tracker y metadatos técnicos similares, para aplicar límites de uso razonable, detectar comportamientos anómalos, prevenir fraude y proteger la fiabilidad del servicio.</li>
             <li><strong>Preferencias dietéticas:</strong> A través de su "Perfil de Sabor", para personalizar las
                 recomendaciones de la IA.</li>
             <li><strong>Datos derivados de menús y platos:</strong> Podemos almacenar hechos estructurados de menús,
@@ -431,7 +431,7 @@
             <li>Almacenamiento del contexto necesario para soportar los asistentes de menú, tracker y ayuda en
                 distintas superficies de la app.</li>
             <li>Identificación del restaurante mediante servicios de ubicación.</li>
-            <li>Gestión de los límites del plan gratuito, incluida la asignación diaria actual de escaneos y el límite de historial reciente, así como el acceso por suscripción, las restauraciones de compra y los derechos Premium, incluida la asignación actual de visualizaciones de platos.</li>
+            <li>Gestión de los límites del plan gratuito, incluida la asignación diaria actual de escaneos, la ventana gratuita de 14 días para el historial del tracker y el límite de historial reciente, así como el acceso por suscripción, las restauraciones de compra y los derechos Premium, incluida la asignación actual de visualizaciones de platos.</li>
             <li>Supervisión de actividades anómalas, automatizadas, fraudulentas o abusivas y protección de la fiabilidad y seguridad del servicio.</li>
         </ul>
 
