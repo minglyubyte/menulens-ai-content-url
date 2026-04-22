@@ -116,9 +116,11 @@
                 events, and entitlement status to manage free-tier access, including the free tracker history window of
                 the last 14 days, as well as Premium Monthly access and Premium Annual access.</li>
             <li><strong>Usage and Security Signals:</strong> We may collect usage logs and related security signals,
-                such as scan counts, dish visualization requests, assistant request volume, device/session activity,
-                tracker history lock interactions, and similar technical metadata, to enforce fair-use limits, detect
-                abnormal behavior, prevent fraud, and protect service reliability.</li>
+                such as scan counts, dish visualization requests, assistant request volume, assistant web-grounding
+                search usage (including selected search model, fallback status, quota/rate-limit outcomes, and
+                timing metrics), device/session activity, tracker history lock interactions, and similar technical
+                metadata, to enforce fair-use limits, detect abnormal behavior, prevent fraud, and protect service
+                reliability.</li>
             <li><strong>Dietary Preferences and Goals:</strong> Through your "Taste Profile", we collect dietary tags,
                 allergies, food preferences, and selected nutrition goals such as macro targets in order to personalize
                 your AI recommendations and tracking experience.</li>
@@ -151,9 +153,10 @@
 
         <h2>3. Third-Party Services and AI Processing</h2>
         <ul>
-            <li><strong>Artificial Intelligence Providers:</strong> Menu images, meal images, and chat text inputs are
-                sent securely to third-party AI providers (such as Google). They are restricted from using your data
-                to train their models.</li>
+            <li><strong>Artificial Intelligence Providers:</strong> Menu images, meal images, chat text inputs, and
+                assistant web-search queries may be sent securely to third-party AI providers (such as Google). They
+                are restricted from using your data to train their models. We may also transmit limited technical
+                metadata required for model routing, quota monitoring, and reliability controls.</li>
             <li><strong>Location Services:</strong> Data is transmitted to the Mapbox Search API to fulfill restaurant
                 matching. This is not stored permanently or traced to your personal identity. Requests are protected
                 by rate limits and rolling 24-hour usage caps to prevent abuse and control service costs.</li>
@@ -207,7 +210,7 @@
             <li><strong>助手与会话数据：</strong> 为了提供菜单助手、追踪助手和帮助助手功能，我们可能会存储助手对话历史、助手会话上下文，以及有限的跨页面助手状态。</li>
             <li><strong>位置数据：</strong> 如果您授予权限，我们会访问您的精确位置，以便自动识别附近的餐厅并标记扫描的菜单。此数据为实时处理。</li>
             <li><strong>购买与权益数据：</strong> 我们会追踪您的应用内订阅购买、恢复购买事件和权益状态，以管理免费层权限，包括免费用户最近 14 天的追踪历史窗口，以及 Premium Monthly 和 Premium Annual 的访问权限。</li>
-            <li><strong>使用与安全信号：</strong> 我们可能会收集使用日志及相关安全信号，例如扫描次数、菜品效果图请求次数、助手请求量、设备/会话活动、追踪历史锁定日期点击记录及类似技术元数据，用于执行合理使用限制、检测异常行为、防止欺诈并保护服务稳定性。</li>
+            <li><strong>使用与安全信号：</strong> 我们可能会收集使用日志及相关安全信号，例如扫描次数、菜品效果图请求次数、助手请求量、助手网页检索（grounding）使用情况（包括所选搜索模型、是否触发回退、配额/速率限制结果和时延指标）、设备/会话活动、追踪历史锁定日期点击记录及类似技术元数据，用于执行合理使用限制、检测异常行为、防止欺诈并保护服务稳定性。</li>
             <li><strong>饮食偏好与目标：</strong> 通过您的“口味档案”，我们收集饮食标签、过敏原、食物偏好以及您选择的营养目标（如宏量营养目标），以个性化您的 AI 推荐和追踪体验。</li>
             <li><strong>派生的菜单、菜品与餐食数据：</strong> 我们可能会存储从上传内容中生成的结构化菜单事实、菜品描述、食材信息、营养估算、餐食组成、每日汇总以及类似 AI 派生输出。</li>
         </ul>
@@ -229,7 +232,7 @@
 
         <h2>3. 第三方服务与 AI 处理</h2>
         <ul>
-            <li><strong>人工智能提供商：</strong> 菜单图像、餐食图像和聊天文本会安全地发送给第三方 AI 提供商（如 Google）。他们被禁止使用您的数据来训练其模型。</li>
+            <li><strong>人工智能提供商：</strong> 菜单图像、餐食图像、聊天文本以及助手网页检索查询会安全地发送给第三方 AI 提供商（如 Google）。他们被禁止使用您的数据来训练其模型。我们也可能传输模型路由、配额监控和可靠性控制所需的有限技术元数据。</li>
             <li><strong>位置服务：</strong> 数据传输至 Mapbox Search API 以完成餐厅匹配。这些数据不会永久存储，也不会追溯到您的个人身份。为防止滥用并控制服务成本，请求会受到速率限制和滚动 24 小时使用上限保护。</li>
             <li><strong>云存储：</strong> 您上传的菜单图像和餐食照片会作为与用户关联的数据，使用 Cloudflare R2 对象存储进行安全存储，以支持应用功能。</li>
             <li><strong>AI 生成的视觉输出：</strong> AI 生成的菜品效果图由平台生成，归 ScanMyMenu 所有，并可为了性能、一致性和成本效率在应用中保留、展示、缓存和复用。仅因某位用户触发生成，并不会使该输出被视为用户拥有的个人数据。</li>
@@ -268,7 +271,7 @@
             <li><strong>位置情報データ：</strong>
                 許可をいただいた場合、周辺のレストランを自動的に特定し、スキャンしたメニューにタグを付けるために、正確な位置情報にアクセスします。このデータはリアルタイムで処理されます。</li>
             <li><strong>購入および権利データ：</strong> 無料プランのアクセス管理（無料ユーザーのトラッカー履歴は直近14日間を含む）および Premium Monthly、Premium Annual のアクセスを管理するため、アプリ内サブスクリプション購入、復元イベント、および権利状態を追跡します。</li>
-            <li><strong>利用状況およびセキュリティシグナル：</strong> フェアユース制限の適用、異常行動の検知、不正防止、サービスの信頼性保護のため、スキャン回数、料理ビジュアル生成リクエスト数、アシスタントの利用量、デバイス/セッション活動、トラッカー履歴のロックされた日付への操作、およびその他類似の技術メタデータを収集する場合があります。</li>
+            <li><strong>利用状況およびセキュリティシグナル：</strong> フェアユース制限の適用、異常行動の検知、不正防止、サービスの信頼性保護のため、スキャン回数、料理ビジュアル生成リクエスト数、アシスタントの利用量、アシスタントのウェブグラウンディング検索利用（選択された検索モデル、フォールバックの有無、クォータ/レート制限の結果、遅延指標を含む）、デバイス/セッション活動、トラッカー履歴のロックされた日付への操作、およびその他類似の技術メタデータを収集する場合があります。</li>
             <li><strong>食事の好みと目標：</strong> 「テイストプロフィール」を通じて、AIによるおすすめやトラッキング体験をパーソナライズするために、食事タグ、アレルギー、食品の好み、マクロ目標などの栄養目標を収集します。</li>
             <li><strong>派生したメニュー・料理・食事データ：</strong> アップロードされたコンテンツから生成された構造化メニュー情報、料理の説明、材料情報、栄養推定、食事の構成データ、日次サマリー、および類似のAI派生出力を保存する場合があります。</li>
         </ul>
@@ -291,7 +294,7 @@
         <h2>3. サードパーティサービスとAI処理</h2>
         <ul>
             <li><strong>人工知能プロバイダー：</strong>
-                メニュー画像、食事画像、チャット入力は、サードパーティAIプロバイダー（Googleなど）に安全に送信されます。プロバイダーがこれらのデータを使用してモデルをトレーニングすることは禁止されています。</li>
+                メニュー画像、食事画像、チャット入力、およびアシスタントのウェブ検索クエリは、サードパーティAIプロバイダー（Googleなど）に安全に送信される場合があります。プロバイダーがこれらのデータを使用してモデルをトレーニングすることは禁止されています。モデルルーティング、クォータ監視、信頼性制御に必要な限定的な技術メタデータを送信する場合もあります。</li>
             <li><strong>位置情報サービス：</strong> レストランの照合を行うため、データはMapbox Search
                 APIに送信されます。このデータが永続的に保存されたり、個人特定に使用されたりすることはありません。不正利用防止とサービスコスト管理のため、リクエストにはレート制限と24時間ローリングの利用上限が適用されます。</li>
             <li><strong>クラウドストレージ：</strong> アップロードされたメニュー画像や食事写真は、アプリ機能に必要なユーザー関連データとして、Cloudflare R2 オブジェクトストレージに安全に保存されます。</li>
@@ -333,7 +336,7 @@
             <li><strong>Données de localisation :</strong> Avec votre permission, pour identifier les restaurants à
                 proximité. Traitées en temps réel.</li>
             <li><strong>Données d'achat et de droits :</strong> Pour gérer vos abonnements intégrés, les restaurations d'achat et les droits d'accès Free, y compris la fenêtre d'historique tracker gratuite des 14 derniers jours, ainsi que Premium Monthly et Premium Annual.</li>
-            <li><strong>Signaux d'usage et de sécurité :</strong> Nous pouvons collecter des journaux d'usage et des signaux de sécurité associés, tels que le nombre de scans, les demandes de visualisation de plats, le volume de requêtes à l'assistant, l'activité de l'appareil/de session, les interactions avec les dates verrouillées de l'historique tracker et des métadonnées techniques similaires, afin d'appliquer les limites d'usage raisonnable, détecter les comportements anormaux, prévenir la fraude et protéger la fiabilité du service.</li>
+            <li><strong>Signaux d'usage et de sécurité :</strong> Nous pouvons collecter des journaux d'usage et des signaux de sécurité associés, tels que le nombre de scans, les demandes de visualisation de plats, le volume de requêtes à l'assistant, l'usage de la recherche web de grounding de l'assistant (y compris le modèle de recherche sélectionné, l'état de fallback, les résultats de quota/limites de débit et les mesures de latence), l'activité de l'appareil/de session, les interactions avec les dates verrouillées de l'historique tracker et des métadonnées techniques similaires, afin d'appliquer les limites d'usage raisonnable, détecter les comportements anormaux, prévenir la fraude et protéger la fiabilité du service.</li>
             <li><strong>Préférences et objectifs alimentaires :</strong> Via votre "Profil de goût", nous pouvons
                 collecter vos préférences, allergies et objectifs nutritionnels, y compris certains objectifs de
                 macros, afin de personnaliser les recommandations de l'IA et l'expérience de suivi.</li>
@@ -365,9 +368,11 @@
 
         <h2>3. Services tiers et traitement IA</h2>
         <ul>
-            <li><strong>IA :</strong> Les images de menus, les images de repas et les messages sont envoyés de manière
-                sécurisée à des prestataires (comme Google). Ils ne peuvent pas utiliser vos données pour entraîner
-                leurs modèles.</li>
+            <li><strong>IA :</strong> Les images de menus, les images de repas, les messages et les requêtes de
+                recherche web de l'assistant peuvent être envoyés de manière sécurisée à des prestataires (comme
+                Google). Ils ne peuvent pas utiliser vos données pour entraîner leurs modèles. Nous pouvons également
+                transmettre des métadonnées techniques limitées nécessaires au routage de modèle, au suivi des quotas
+                et aux contrôles de fiabilité.</li>
             <li><strong>Localisation :</strong> Utilisation de Mapbox Search API. Les données ne sont pas stockées de
                 manière permanente. Les requêtes sont protégées par des limites de débit et des plafonds d'usage
                 glissants sur 24 heures afin de prévenir les abus et de maîtriser les coûts du service.</li>
@@ -435,7 +440,7 @@
             <li><strong>Datos de ubicación:</strong> Con su permiso, para identificar restaurantes cercanos. Procesados
                 en tiempo real.</li>
             <li><strong>Datos de compra y de derechos:</strong> Para gestionar sus suscripciones dentro de la app, las restauraciones de compra y el acceso Free, incluida la ventana gratuita de 14 días del historial del tracker, así como Premium Monthly y Premium Annual.</li>
-            <li><strong>Señales de uso y seguridad:</strong> Podemos recopilar registros de uso y señales de seguridad relacionadas, como el número de escaneos, solicitudes de visualización de platos, volumen de solicitudes al asistente, actividad del dispositivo o de la sesión, interacciones con fechas bloqueadas del historial del tracker y metadatos técnicos similares, para aplicar límites de uso razonable, detectar comportamientos anómalos, prevenir fraude y proteger la fiabilidad del servicio.</li>
+            <li><strong>Señales de uso y seguridad:</strong> Podemos recopilar registros de uso y señales de seguridad relacionadas, como el número de escaneos, solicitudes de visualización de platos, volumen de solicitudes al asistente, uso de búsqueda web con grounding del asistente (incluido el modelo de búsqueda seleccionado, el estado de fallback, los resultados de cuota/límites de velocidad y métricas de latencia), actividad del dispositivo o de la sesión, interacciones con fechas bloqueadas del historial del tracker y metadatos técnicos similares, para aplicar límites de uso razonable, detectar comportamientos anómalos, prevenir fraude y proteger la fiabilidad del servicio.</li>
             <li><strong>Preferencias y objetivos dietéticos:</strong> A través de su "Perfil de Sabor", podemos
                 recopilar preferencias, alergias y objetivos nutricionales, incluidos ciertos objetivos de macros, para
                 personalizar las recomendaciones de la IA y la experiencia del tracker.</li>
@@ -466,9 +471,11 @@
 
         <h2>3. Servicios de terceros y procesamiento de IA</h2>
         <ul>
-            <li><strong>Proveedores de IA:</strong> Las imágenes de menús, las imágenes de comidas y los mensajes se
-                envían de forma segura a proveedores (como Google). Tienen restringido el uso de sus datos para
-                entrenar modelos.</li>
+            <li><strong>Proveedores de IA:</strong> Las imágenes de menús, las imágenes de comidas, los mensajes y las
+                consultas de búsqueda web del asistente pueden enviarse de forma segura a proveedores (como Google).
+                Tienen restringido el uso de sus datos para entrenar modelos. También podemos transmitir metadatos
+                técnicos limitados necesarios para el enrutamiento de modelos, la monitorización de cuotas y los
+                controles de fiabilidad.</li>
             <li><strong>Servicios de ubicación:</strong> Uso de Mapbox Search API. Los datos no se almacenan
                 permanentemente. Las solicitudes están protegidas por límites de velocidad y topes de uso móviles de
                 24 horas para prevenir abusos y controlar los costos del servicio.</li>
